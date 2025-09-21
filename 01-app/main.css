@@ -1,0 +1,64 @@
+#app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 2rem;
+
+
+  & #calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    & #display {
+      width: 100%;
+    }
+
+    & #keys-container {
+      display: flex;
+      gap: 0.2em;
+    }
+
+    & .keys {
+      gap: 0.2em;
+    }
+    & #advanced-keys {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    & #basic-keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+    }
+
+    & button {
+      height: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+/* Default styles for mobile */
+
+/* Apply styles for tablets and larger screens */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Apply styles for desktops and larger screens */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+
