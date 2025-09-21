@@ -13,9 +13,17 @@
     <div id="calculator">
       
       <!-- Display Screen -->
-      <div>
-        <label for="display" aria-label="Display">
-          <input id="display" readonly type="text">
+      <div id="display-screen">
+        <div id="history-icon-box">
+          <svg style="max-width: 100%; fill: hsl(0,0%,58%);" focusable="false" aria-hidden="true"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 24 24">
+            <path
+              d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path>
+          </svg>
+        </div>
+        <label for="display-input" aria-label="Display">
+          <input id="display-input" readonly type="text">
         </label>
       </div>
       
@@ -23,8 +31,10 @@
       <div id="keys-container">
         <!-- Complex operators  -->
         <div id="advanced-keys" class="keys">
-          <button>Rad</button>
-          <button>Deg</button>
+          <div id="rad-deg-container">
+            <button id="rad">Rad</button>
+            <button id="deg">Deg</button>
+          </div>
           <button>x!</button>
           
           <button>Inv</button>
@@ -51,24 +61,24 @@
           <button>&#37;</button>
           <button>AC</button>
           <!-- Second row-->
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
+          <button class="operand">7</button>
+          <button class="operand">8</button>
+          <button class="operand">9</button>
           <button>&#247;</button>
           <!-- Third row-->
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
+          <button class="operand">4</button>
+          <button class="operand">5</button>
+          <button class="operand">6</button>
           <button>&#215;</button>
-          <!-- Third row-->
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
+          <!-- Fourth row-->
+          <button class="operand">1</button>
+          <button class="operand">2</button>
+          <button class="operand">3</button>
           <button>&#8722;</button>
-          <!-- Third row-->
-          <button>0</button>
-          <button>&#46;</button>
-          <button>&#61;</button>
+          <!-- Fifth row-->
+          <button class="operand">0</button>
+          <button class="operand">&#46;</button>
+          <button id="eval">&#61;</button>
           <button>&#43;</button>
         </div>
       </div>

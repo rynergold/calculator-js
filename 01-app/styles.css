@@ -1,3 +1,16 @@
+:root {
+  --background-primary: #202020;
+  --border-primary: #444746;
+  --border-secondary: #757FA4;
+  --button-bg: #2C303D;
+  --button-active-bg: #3B4050;
+  --button-operand-bg:  #333438;
+  --button-eval-bg: #A8C7FA;
+  --button-rad-bg: #A8C7FA;
+  --display-bg: #2F3135;
+
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -23,6 +36,7 @@ body {
   height: 100vh;
   display: flex;
   font-size: 18px;
+  background-color: var(--background-primary);
 }
 
 /* 6. Improve media defaults */
